@@ -5,7 +5,9 @@ export default function Nav() {
     <nav>
       <div className="flex w-full items-center justify-between">
         <a className="logo icon-img-100" href="#">
-          <h1 style={{ fontSize: "2rem" }}>Adkins</h1>
+          <h1 className="font-pixel flex items-center gap-2 text-3xl font-bold">
+            Adkins
+          </h1>
         </a>
         <button
           className="md:hidden"
@@ -23,29 +25,28 @@ export default function Nav() {
         <div>
           {" "}
           {/*className="collapse navbar-collapse justify-content-center"*/}
-          <ul className="flex gap-8 text-xs">
+          <ul className="flex gap-12 text-sm">
             <li className="uppercase">
-              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
+              <a className="font-pixel inline-flex py-5 leading-8" href="#">
                 <span>About</span>
               </a>
             </li>
             <li className="uppercase">
-              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
+              <a className="font-pixel inline-flex py-5 leading-8" href="#">
                 <span>Projects</span>
               </a>
             </li>
             <li className="uppercase">
-              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
+              <a className="font-pixel inline-flex py-5 leading-8" href="#">
                 <span>Blog</span>
               </a>
             </li>
           </ul>
         </div>
 
-        <div style={{ perspective: "10rem" }} className="hidden md:flex">
+        <div className="hidden md:flex">
           <a
-            style={{ transform: "rotateX(20deg)" }}
-            className="font-sansAlt rounded-[5px] bg-white px-6 py-3 text-xs text-black"
+            className="font-pixel inline-flex bg-white px-6 py-3 text-sm text-black"
             href="#"
           >
             <span className="uppercase">Contact</span>

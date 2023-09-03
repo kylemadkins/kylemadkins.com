@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sansAlt: ["Monument Extended", ...defaultTheme.fontFamily.sans],
+        pixel: "var(--font-pixel), sans-serif",
       },
       colors: {
         primaryGreen: "var(--primary-green)",
