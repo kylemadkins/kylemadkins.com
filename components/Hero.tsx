@@ -3,6 +3,9 @@
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
+import Skill from "./Skill";
+import Download from "./icons/Download";
+
 export default function Hero() {
   const typedEl = useRef(null);
 
@@ -16,7 +19,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="grid grid-cols-3 px-[6rem]">
+    <section className="grid grid-cols-3 px-[8rem]">
       <div className="max-w-[360px] py-[6rem]">
         <div className="border-borderColor self-start border-[1px] px-10 py-16 text-center">
           <h3 className="text-2xl leading-4">Kyle Adkins</h3>
@@ -51,31 +54,35 @@ export default function Hero() {
 
           <div className="self-center">
             <a
-              className="font-pixel border-borderColor inline-flex gap-2 border-[1px] px-6 py-4 text-sm"
+              className="font-pixel border-borderColor inline-flex gap-2 border-[1px] px-6 py-3 text-sm transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
               href="#"
             >
-              <img className="h-6" src="/icons/download.svg" alt="" />
+              <Download className="h-6" />
               <span className="uppercase">Resume</span>
             </a>
           </div>
         </div>
 
-        <div className="mt-[6rem] flex flex-wrap gap-8 text-5xl opacity-10">
-          <i className="devicon-html5-plain"></i>
-          <i className="devicon-css3-plain"></i>
-          <i className="devicon-typescript-plain"></i>
-          <i className="devicon-react-plain"></i>
-          <i className="devicon-python-plain"></i>
-          <i className="devicon-php-plain"></i>
-          <i className="devicon-postgresql-plain"></i>
-          <i className="devicon-graphql-plain"></i>
-          <i className="devicon-go-original-wordmark"></i>
-          <i className="devicon-git-plain"></i>
-          <i className="devicon-cplusplus-plain"></i>
-          <i className="devicon-csharp-plain"></i>
-          <i className="devicon-docker-plain"></i>
-          <i className="devicon-jira-plain"></i>
-          <i className="devicon-unity-original"></i>
+        <div className="mt-[6rem] flex flex-wrap gap-8 text-5xl">
+          {[
+            "devicon-html5-plain",
+            "devicon-css3-plain",
+            "devicon-typescript-plain",
+            "devicon-react-plain",
+            "devicon-python-plain",
+            "devicon-php-plain",
+            "devicon-postgresql-plain",
+            "devicon-graphql-plain",
+            "devicon-go-original-wordmark",
+            "devicon-git-plain",
+            "devicon-cplusplus-plain",
+            "devicon-csharp-plain",
+            "devicon-docker-plain",
+            "devicon-jira-plain",
+            "devicon-unity-original",
+          ].map((icon) => (
+            <Skill icon={icon} />
+          ))}
         </div>
       </div>
     </section>

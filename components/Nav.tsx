@@ -2,7 +2,7 @@
 
 export default function Nav() {
   return (
-    <nav>
+    <nav className="px-10 py-4">
       <div className="flex w-full items-center justify-between">
         <a className="logo icon-img-100" href="#">
           <h1 className="font-pixel flex items-center gap-2 text-3xl font-bold">
@@ -46,7 +46,7 @@ export default function Nav() {
 
         <div className="hidden md:flex">
           <a
-            className="font-pixel inline-flex bg-white px-6 py-3 text-sm text-black"
+            className="font-pixel hover:border-borderColor inline-flex border-[1px] border-white bg-white px-6 py-3 text-sm text-black transition-all duration-300 hover:bg-transparent hover:text-white"
             href="#"
           >
             <span className="uppercase">Contact</span>

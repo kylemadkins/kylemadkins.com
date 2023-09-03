@@ -5,9 +5,7 @@ import Projects from "@/components/Projects";
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col">
-      <div className="px-[8.5rem]">
-        <Nav />
-      </div>
+      <Nav />
       <div className="px-10 pb-10">
         <div className="border-borderColor border-[1px]">
           <main>
