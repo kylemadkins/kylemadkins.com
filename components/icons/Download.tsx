@@ -1,4 +1,4 @@
-export default function Download({ className }: { className: string }) {
+export default function Download({ className }: { className?: string }) {
   return (
     <svg
       className={className}

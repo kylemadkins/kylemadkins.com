@@ -1,9 +1,21 @@
+import Project from "./Project";
+
 export default function Projects() {
   return (
-    <section>
-      <h2 className="mb-6 px-[8rem] text-4xl">Projects</h2>
-      <hr className="border-borderColor border-t-[1px]" />
-      <div className="mt-[100px]"></div>
+    <section className="px-[8rem] pb-[8rem]">
+      <h2 className="mb-6 text-4xl">Projects</h2>
+      <div className="mt-[4rem] grid grid-cols-2 gap-12">
+        <Project
+          imageUrl="/images/crystal.jpeg"
+          tags={["javascript", "nextjs", "nodejs"]}
+          title="Crystal Bridges Museum of American Art"
+        />
+        <Project
+          imageUrl="/images/schlep.jpeg"
+          tags={["javascript", "vuejs", "rails"]}
+          title="Schlep"
+        />
+      </div>
     </section>
   );
 }

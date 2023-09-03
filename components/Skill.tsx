@@ -3,10 +3,10 @@ export default function Skill({ icon }: { icon: string }) {
     <i
       className={[
         icon,
-        "opacity-10",
-        "hover:opacity-100",
+        "hover:text-white",
         "duration-500",
         "transition-all",
+        "text-lightGray",
       ].join(" ")}
     ></i>
   );

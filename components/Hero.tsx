@@ -40,7 +40,12 @@ export default function Hero() {
           Software Engineer and Creative Technologist.
         </h1>
 
-        <div className="mt-[6rem] flex gap-16">
+        <p className="mt-12 max-w-[520px] text-lg font-light">
+          Welcome to my little corner of the Internet. Kick your feet up, grab a
+          drink, and enjoy your stay.
+        </p>
+
+        <div className="mt-8 flex gap-16">
           <div className="flex items-center gap-4">
             <div className="font-pixel text-8xl">
               {new Date().getFullYear() - new Date(2017, 0, 1).getFullYear()}

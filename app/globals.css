@@ -15,7 +15,9 @@
   --card-color: #0f182b;
   --border-color: #222f43;
   --primary-text-color: #fff;
-  --background-color: #000;
+  --lighter-gray: #a7b8d4;
+  --light-gray: #576680;
+  --background-color: #0f172a;
   --background-start-color: #000;
   --background-end-color: #0f172a;
 }
@@ -29,4 +31,22 @@ body {
     var(--background-end-color) 74%
   );
   font-family: var(--font-sans-primary);
+}
+
+.project img {
+  border: 1px solid transparent;
+}
+
+.project:hover img {
+  border-color: var(--primary-green);
+}
+
+.project:hover .tag {
+  border-color: var(--primary-green);
+  background: var(--primary-green);
+  color: #000;
+}
+
+.project:hover .arrow {
+  color: var(--primary-green);
 }
