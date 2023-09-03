@@ -2,26 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@font-face {
+  font-family: "Monument Extended";
+  src: url("/fonts/PPMonumentExtended-Regular.otf");
+  font-weight: 400;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+:root {
+  --primary-green: #6afca9;
+  --card-color: #0f182b;
+  --border-color: #222f43;
+  --primary-text-color: #fff;
+  --background-color: #000;
+  --background-start-color: #000;
+  --background-end-color: #0f172a;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  background-image: linear-gradient(
+    147deg,
+    var(--background-start-color) 0%,
+    var(--background-end-color) 74%
+  );
+  font-family: var(--font-sans-primary);
 }

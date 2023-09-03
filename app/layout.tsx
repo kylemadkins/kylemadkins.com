@@ -1,8 +1,15 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk, Archivo_Narrow } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-sans-primary",
+  subsets: ["latin"],
+});
+const archivoNarrow = Archivo_Narrow({
+  variable: "--font-sans-alt",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={[spaceGrotesk.variable, archivoNarrow.variable].join(" ")}
+      >
+        {children}
+      </body>
     </html>
   );
 }
