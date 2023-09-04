@@ -11,15 +11,15 @@
 }
 
 :root {
-  --primary-green: #6afca9;
+  --primary-green: #97ba0b;
   --card-color: #0f182b;
   --border-color: #222f43;
   --primary-text-color: #fff;
   --lighter-gray: #a7b8d4;
   --light-gray: #576680;
   --background-color: #0f172a;
-  --background-start-color: #000;
-  --background-end-color: #0f172a;
+  --background-start-color: #070707;
+  --background-end-color: #070f21;
 }
 
 body {
@@ -44,7 +44,6 @@ body {
 .project:hover .tag {
   border-color: var(--primary-green);
   background: var(--primary-green);
-  color: #000;
 }
 
 .project:hover .arrow {
@@ -58,8 +57,10 @@ body {
   width: 1rem;
   background-color: #fff;
   border-radius: 50%;
-  mix-blend-mode: difference;
+  mix-blend-mode: hard-light;
+  opacity: 0.7;
   transition:
+    background-color 0.3s ease,
     height 0.3s ease,
     width 0.3s ease,
     margin 0.3s ease,
@@ -70,6 +71,8 @@ body {
 }
 
 .cursorActive {
+  background-color: var(--primary-green);
+  opacity: 1;
   height: 5rem;
   width: 5rem;
   margin-left: -2.5rem;
