@@ -14,16 +14,15 @@
   --primary-green: #97ba0b;
   --card-color: #0f182b;
   --border-color: #222f43;
-  --primary-text-color: #fff;
   --lighter-gray: #a7b8d4;
   --light-gray: #576680;
-  --background-color: #0f172a;
+  --background-color: #070f21;
   --background-start-color: #070707;
   --background-end-color: #070f21;
 }
 
 body {
-  color: var(--primary-text-color);
+  @apply text-gray-300;
   background-color: var(--background-color);
   background-image: linear-gradient(
     117deg,
@@ -39,6 +38,10 @@ body {
 
 .project:hover .imageContainer {
   border-color: var(--primary-green);
+}
+
+.project:hover .imageContainer canvas {
+  opacity: 1;
 }
 
 .project:hover .tag {

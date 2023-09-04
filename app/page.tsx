@@ -2,8 +2,9 @@ import Cursor from "@/components/Cursor";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-import Testimonials from "@/components/Testimonials";
+import Partners from "@/components/Partners";
 import LatestPosts from "@/components/LatestPosts";
+import Heart from "@/components/icons/Heart";
 
 export default function Home() {
   return (
@@ -12,22 +13,18 @@ export default function Home() {
       <div className="flex min-h-screen flex-col">
         <Nav />
         <div className="px-10 pb-10">
-          <div className="border-borderColor border-[1px]">
+          <div className="border-[1px] border-borderColor">
             <main>
               <Hero />
               <Projects />
-              <Testimonials />
+              <Partners />
               <LatestPosts />
             </main>
             <footer></footer>
           </div>
           <p className="mt-8 flex items-center justify-center text-center">
             &copy; {new Date().getFullYear()} Made with
-            <img
-              className="mx-1 inline-flex h-6"
-              src="/icons/heart.svg"
-              alt="Love"
-            />
+            <Heart className="mx-1 inline-flex h-6" />
             by Kyle
           </p>
         </div>
