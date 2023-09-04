@@ -9,6 +9,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xs: "0.7rem",
+        "2xs": "0.6rem",
+      },
       fontFamily: {
         sansAlt: ["Monument Extended", ...defaultTheme.fontFamily.sans],
         pixel: "var(--font-pixel), sans-serif",

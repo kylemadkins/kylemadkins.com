@@ -59,7 +59,7 @@ export default function Hero() {
 
           <div className="self-center">
             <a
-              className="font-pixel border-borderColor inline-flex gap-2 border-[1px] px-6 py-3 text-sm transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
+              className="font-sansAlt border-borderColor inline-flex items-center gap-2 border-[1px] px-6 py-3 text-xs transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
               href="#"
             >
               <Download className="h-6" />
@@ -86,7 +86,7 @@ export default function Hero() {
             "devicon-jira-plain",
             "devicon-unity-original",
           ].map((icon) => (
-            <Skill icon={icon} />
+            <Skill key={icon} icon={icon} />
           ))}
         </div>
       </div>

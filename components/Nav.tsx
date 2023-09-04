@@ -23,21 +23,20 @@ export default function Nav() {
           </span>
         </button>
         <div>
-          {" "}
           {/*className="collapse navbar-collapse justify-content-center"*/}
-          <ul className="flex gap-12 text-sm">
+          <ul className="flex gap-12 text-xs">
             <li className="uppercase">
-              <a className="font-pixel inline-flex py-5 leading-8" href="#">
+              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
                 <span>About</span>
               </a>
             </li>
             <li className="uppercase">
-              <a className="font-pixel inline-flex py-5 leading-8" href="#">
+              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
                 <span>Projects</span>
               </a>
             </li>
             <li className="uppercase">
-              <a className="font-pixel inline-flex py-5 leading-8" href="#">
+              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
                 <span>Blog</span>
               </a>
             </li>
@@ -46,7 +45,7 @@ export default function Nav() {
 
         <div className="hidden md:flex">
           <a
-            className="font-pixel hover:border-borderColor inline-flex border-[1px] border-white bg-white px-6 py-3 text-sm text-black transition-all duration-300 hover:bg-transparent hover:text-white"
+            className="font-sansAlt hover:border-borderColor inline-flex border-[1px] border-white bg-white px-6 py-3 text-xs text-black transition-all duration-300 hover:bg-transparent hover:text-white"
             href="#"
           >
             <span className="uppercase">Contact</span>

@@ -2,9 +2,11 @@ import Project from "./Project";
 
 export default function Projects() {
   return (
-    <section className="px-[8rem] pb-[8rem]">
-      <h2 className="mb-6 text-4xl">Projects</h2>
-      <div className="mt-[4rem] grid grid-cols-2 gap-12">
+    <section className="px-[8rem] py-[2rem]">
+      <h2 className="font-sansAlt border-borderColor border-b-[1px] py-5 text-3xl uppercase">
+        Projects
+      </h2>
+      <div className="grid grid-cols-2 gap-12 pb-[8rem] pt-[4rem]">
         <Project
           imageUrl="/images/crystal.jpeg"
           tags={["javascript", "nextjs", "nodejs"]}
