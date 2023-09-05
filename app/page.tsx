@@ -5,6 +5,7 @@ import Projects from "@/components/Projects";
 import Partners from "@/components/Partners";
 import LatestPosts from "@/components/LatestPosts";
 import Heart from "@/components/icons/Heart";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
               <Projects />
               <Partners />
               <LatestPosts />
+              <Contact />
             </main>
             <footer></footer>
           </div>

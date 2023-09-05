@@ -21,7 +21,7 @@ export default function ProjectImage({ imageUrl }: { imageUrl: string }) {
         ctx.drawImage(imageEl.current, 0, 0, width, height);
 
         const pixels = ctx.getImageData(0, 0, width, height).data;
-        const pixelSize = 12;
+        const pixelSize = 8;
 
         for (let y = 0; y < height; y += pixelSize) {
           for (let x = 0; x < width; x += pixelSize) {
