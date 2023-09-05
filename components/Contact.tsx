@@ -22,28 +22,33 @@ export default function Contact() {
             <a href="#">LinkedIn</a>
           </div>
         </div>
-        <form className="contactForm flex flex-col gap-8">
-          <div className="grid grid-cols-2 gap-8">
+        <form style={{ perspective: "30rem" }}>
+          <div
+            style={{ transform: "rotateY(-5deg)" }}
+            className="contactForm flex flex-col gap-8"
+          >
+            <div className="grid grid-cols-2 gap-8">
+              <input
+                className="border-[1px] border-borderColor bg-transparent px-6 py-4 outline-none transition-all duration-500 focus:border-lighterGray"
+                placeholder="Name"
+              />
+              <input
+                className="border-[1px] border-borderColor bg-transparent px-6 py-4 outline-none transition-all duration-500 focus:border-lighterGray"
+                placeholder="Email"
+              />
+            </div>
             <input
               className="border-[1px] border-borderColor bg-transparent px-6 py-4 outline-none transition-all duration-500 focus:border-lighterGray"
-              placeholder="Name"
+              placeholder="Subject"
             />
-            <input
-              className="border-[1px] border-borderColor bg-transparent px-6 py-4 outline-none transition-all duration-500 focus:border-lighterGray"
-              placeholder="Email"
+            <textarea
+              className="min-h-[200px] border-[1px] border-borderColor bg-transparent px-6 py-4 outline-none focus:border-lighterGray"
+              placeholder="Message"
             />
+            <button className="submitButton relative border-[1px] border-borderColor bg-transparent p-5 font-sansAlt text-xs transition-all duration-500 hover:text-black">
+              <span className="relative z-10">Send Message</span>
+            </button>
           </div>
-          <input
-            className="border-[1px] border-borderColor bg-transparent px-6 py-4 outline-none transition-all duration-500 focus:border-lighterGray"
-            placeholder="Subject"
-          />
-          <textarea
-            className="min-h-[200px] border-[1px] border-borderColor bg-transparent px-6 py-4 outline-none focus:border-lighterGray"
-            placeholder="Message"
-          />
-          <button className="submitButton relative border-[1px] border-borderColor bg-transparent p-5 font-sansAlt text-xs transition-all duration-500 hover:text-black">
-            <span className="relative z-10">Send Message</span>
-          </button>
         </form>
       </div>
     </section>

@@ -7,7 +7,17 @@ export default function LatestPosts() {
           See All
         </a>
       </h2>
-      <div className="grid grid-cols-2 gap-12 pb-[8rem] pt-[4rem]"></div>
+      <div className="grid grid-cols-3 gap-12 pb-[8rem] pt-[4rem]">
+        <div>
+          <div className="aspect-[3/2]">
+            <img
+              className="h-full w-full object-cover"
+              src="/images/actioncable-pixel.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

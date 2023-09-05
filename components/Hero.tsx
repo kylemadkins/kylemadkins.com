@@ -3,8 +3,9 @@
 import { useRef, useEffect } from "react";
 import Typed from "typed.js";
 
-import Skill from "./Skill";
+import ProfileCard from "./ProfileCard";
 import Download from "./icons/Download";
+import Skill from "./Skill";
 
 export default function Hero() {
   const typedEl = useRef(null);
@@ -21,18 +22,7 @@ export default function Hero() {
   return (
     <section className="grid grid-cols-3 px-[8rem]">
       <div className="max-w-[360px] py-[6rem]">
-        <div className="border-borderColor self-start border-[1px] px-10 py-16 text-center">
-          <h3 className="text-2xl leading-4">Kyle Adkins</h3>
-          <p className="mt-5 leading-4">@kylemadkins</p>
-          <div className="mt-5 flex items-center justify-center gap-4">
-            <a href="#">
-              <img className="h-6" src="/icons/github.svg" alt="Github" />
-            </a>
-            <a href="#">
-              <img className="h-6" src="/icons/linkedin.svg" alt="LinkedIn" />
-            </a>
-          </div>
-        </div>
+        <ProfileCard />
       </div>
       <div className="col-span-2 py-[8rem] pl-[6rem]">
         <h1 className="text-6xl leading-tight">
@@ -59,7 +49,7 @@ export default function Hero() {
 
           <div className="self-center">
             <a
-              className="font-sansAlt border-borderColor inline-flex items-center gap-2 border-[1px] px-6 py-3 text-xs transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
+              className="inline-flex items-center gap-2 border-[1px] border-borderColor px-6 py-3 font-sansAlt text-xs transition-all duration-300 hover:border-white hover:bg-white hover:text-black"
               href="#"
             >
               <Download className="h-6" />

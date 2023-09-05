@@ -11,7 +11,7 @@
 }
 
 :root {
-  --primary-green: #97ba0b;
+  --primary-green: #bdd448;
   --card-color: #0f182b;
   --border-color: #222f43;
   --lighter-gray: #a7b8d4;
@@ -107,4 +107,13 @@ body {
 
 .contactForm .submitButton:hover:before {
   left: 0;
+}
+
+.pixelatedImage img:not(:nth-child(1)) {
+  transition: 0.3s ease;
+  opacity: 0;
+}
+
+.pixelatedImage:hover img:nth-child(2) {
+  opacity: 1;
 }

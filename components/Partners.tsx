@@ -1,7 +1,7 @@
 import Paramount from "./partners/Paramount";
 import CrystalBridges from "./partners/CrystalBridges";
 import Apptegy from "./partners/Apptegy";
-import Schlep from "./partners/Schlep";
+import Few from "./partners/Few";
 import Tyler from "./partners/Tyler";
 
 export default function Partners() {
@@ -21,7 +21,7 @@ export default function Partners() {
           <Apptegy className="h-7 text-lightGray transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
-          <Schlep className="h-9 text-lightGray transition-all duration-500 hover:text-white" />
+          <Few className="h-16 text-lightGray transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
           <Tyler className="h-12 text-lightGray transition-all duration-500 hover:text-white" />

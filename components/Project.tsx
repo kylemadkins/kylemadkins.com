@@ -1,4 +1,3 @@
-import ProjectImage from "./ProjectImage";
 import ArrowUpRight from "./icons/ArrowUpRight";
 
 export default function Project({
@@ -12,8 +11,8 @@ export default function Project({
 }) {
   return (
     <a className="project" href="#">
-      <div className="imageContainer p-2 transition-all duration-500">
-        <ProjectImage imageUrl={imageUrl} />
+      <div className="imageContainer aspect-video p-3 transition-all duration-500">
+        <img className="h-full w-full object-cover" src={imageUrl} alt="" />
       </div>
       <div className="mt-4 flex flex-col gap-6 p-2">
         <div className="flex flex-wrap gap-4">
