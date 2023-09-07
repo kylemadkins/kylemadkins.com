@@ -12,19 +12,19 @@ export default function Partners() {
       </h2>
       <div className="m-auto flex flex-wrap items-center justify-center gap-x-[4rem] gap-y-10 pb-[8rem] pt-[2rem]">
         <a href="#" target="_blank">
-          <Paramount className="h-11 text-lightGray transition-all duration-500 hover:text-white" />
+          <Paramount className="text-mediumGray h-11 transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
-          <CrystalBridges className="h-14 text-lightGray transition-all duration-500 hover:text-white" />
+          <CrystalBridges className="text-mediumGray h-14 transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
-          <Apptegy className="h-7 text-lightGray transition-all duration-500 hover:text-white" />
+          <Apptegy className="text-mediumGray h-7 transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
-          <Few className="h-16 text-lightGray transition-all duration-500 hover:text-white" />
+          <Few className="text-mediumGray h-16 transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
-          <Tyler className="h-12 text-lightGray transition-all duration-500 hover:text-white" />
+          <Tyler className="text-mediumGray h-12 transition-all duration-500 hover:text-white" />
         </a>
       </div>
     </section>

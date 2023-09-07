@@ -12,7 +12,7 @@ export default function Contact() {
               <br />
               <span className="text-primaryGreen">Let's work together.</span>
             </h2>
-            <p className="max-w-[80%] leading-loose">
+            <p className="max-w-[80%] font-light leading-loose">
               I'm always happy to help where I can. Feel free to connect with me
               on LinkedIn or email me at kylemadkins at gmail.com.
             </p>

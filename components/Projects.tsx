@@ -11,12 +11,12 @@ export default function Projects() {
       </h2>
       <div className="grid grid-cols-2 gap-12 pb-[8rem] pt-[4rem]">
         <Project
-          imageUrl="/images/crystal-pixel.png"
+          imageUrl="/images/crystal.jpeg"
           tags={["javascript", "nextjs", "nodejs"]}
           title="Crystal Bridges Museum of American Art"
         />
         <Project
-          imageUrl="/images/schlep-pixel.png"
+          imageUrl="/images/schlep.jpeg"
           tags={["javascript", "vuejs", "rails"]}
           title="Schlep"
         />

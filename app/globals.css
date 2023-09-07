@@ -16,6 +16,7 @@
   --border-color: #222f43;
   --lighter-gray: #a7b8d4;
   --light-gray: #576680;
+  --medium-gray: #343d4d;
   --background-color: #070f21;
   --background-start-color: #090909;
   --background-end-color: #080d18;
@@ -45,6 +46,7 @@ body {
 }
 
 .project:hover .tag {
+  color: #000;
   border-color: var(--primary-green);
   background: var(--primary-green);
 }
@@ -116,4 +118,13 @@ body {
 
 .pixelatedImage:hover img:nth-child(2) {
   opacity: 1;
+}
+
+.post:hover .tag {
+  background-color: var(--primary-green);
+  color: #000;
+}
+
+.post:hover .preview {
+  border-color: var(--primary-green);
 }

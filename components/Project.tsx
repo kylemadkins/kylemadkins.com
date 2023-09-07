@@ -25,12 +25,7 @@ export default function Project({
             </div>
           ))}
         </div>
-        <div className="flex items-center justify-between">
-          <h3 className="text-2xl">{title}</h3>
-          <div className="arrow transition-all duration-500">
-            <ArrowUpRight className="h-6" />
-          </div>
-        </div>
+        <h3 className="text-2xl">{title}</h3>
       </div>
     </a>
   );

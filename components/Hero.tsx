@@ -1,24 +1,9 @@
-"use client";
-
-import { useRef, useEffect } from "react";
-import Typed from "typed.js";
-
 import ProfileCard from "./ProfileCard";
 import Download from "./icons/Download";
 import Skill from "./Skill";
+import TypingText from "./TypingText";
 
 export default function Hero() {
-  const typedEl = useRef(null);
-
-  useEffect(() => {
-    const typed = new Typed(typedEl.current, {
-      strings: ["Kyle Adkins"],
-      typeSpeed: 50,
-    });
-
-    return () => typed.destroy();
-  }, []);
-
   return (
     <section className="grid grid-cols-3 px-[8rem]">
       <div className="max-w-[360px] py-[6rem]">
@@ -26,11 +11,11 @@ export default function Hero() {
       </div>
       <div className="col-span-2 py-[8rem] pl-[6rem]">
         <h1 className="text-6xl leading-tight">
-          Hey! I'm <span ref={typedEl} className="text-primaryGreen"></span>, a
-          Software Engineer and Creative Technologist.
+          Hey! I'm <TypingText text="Kyle Adkins" />, a Software Engineer and
+          Creative Technologist.
         </h1>
 
-        <p className="mt-12 max-w-[520px] text-lg font-light">
+        <p className="mt-10 max-w-[520px] text-lg font-light leading-relaxed">
           Welcome to my little corner of the Internet. Kick your feet up, grab a
           drink, and enjoy your stay.
         </p>
