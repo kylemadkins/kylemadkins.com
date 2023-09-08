@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         sansAlt: ["Monument Extended", ...defaultTheme.fontFamily.sans],
         pixel: "var(--font-pixel), sans-serif",
+        mono: "var(--font-mono), monospace",
       },
       colors: {
         primaryGreen: "var(--primary-green)",
@@ -27,6 +28,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

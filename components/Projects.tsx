@@ -2,14 +2,14 @@ import Project from "./Project";
 
 export default function Projects() {
   return (
-    <section className="px-[8rem] py-[2rem]">
+    <section className="px-[8rem] pb-[8rem]">
       <h2 className="flex items-center justify-between border-b-[1px] border-borderColor py-5 font-sansAlt text-3xl uppercase">
         Projects
-        <a className="text-xs text-lighterGray" href="#">
+        <a className="text-xs text-white" href="#">
           See All
         </a>
       </h2>
-      <div className="grid grid-cols-2 gap-12 pb-[8rem] pt-[4rem]">
+      <div className="grid grid-cols-2 gap-12 pt-[4rem]">
         <Project
           imageUrl="/images/crystal.jpeg"
           tags={["javascript", "nextjs", "nodejs"]}

@@ -122,9 +122,32 @@ body {
 
 .post:hover .tag {
   background-color: var(--primary-green);
+  border-color: var(--primary-green);
   color: #000;
 }
 
 .post:hover .preview {
   border-color: var(--primary-green);
+}
+
+.prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
+  @apply border-[1px];
+  @apply border-borderColor;
+  @apply p-1;
+  @apply text-sm;
+}
+
+.prose
+  :where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::before,
+.prose
+  :where(code):not(
+    :where([class~="not-prose"], [class~="not-prose"] *)
+  )::after {
+  @apply content-none;
+}
+
+.code {
+  background: transparent !important;
 }

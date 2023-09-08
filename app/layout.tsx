@@ -1,10 +1,21 @@
-import "./globals.css";
 import type { Metadata } from "next";
-import { Space_Grotesk, Silkscreen } from "next/font/google";
+import { IBM_Plex_Mono, IBM_Plex_Sans, Silkscreen } from "next/font/google";
 
-const spaceGrotesk = Space_Grotesk({
+import Cursor from "@/components/Cursor";
+import Nav from "@/components/Nav";
+import "./globals.css";
+
+const plexSans = IBM_Plex_Sans({
   variable: "--font-sans-primary",
-  weight: ["300", "400", "700"],
+  weight: ["200", "300", "400", "500", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
+
+const plexMono = IBM_Plex_Mono({
+  variable: "--font-mono",
+  weight: ["400"],
+  style: ["normal", "italic"],
   subsets: ["latin"],
 });
 
@@ -26,8 +37,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={[spaceGrotesk.variable, silkscreen.variable].join(" ")}>
-        {children}
+      <body
+        className={[
+          plexMono.variable,
+          plexSans.variable,
+          silkscreen.variable,
+        ].join(" ")}
+      >
+        <Cursor />
+        <div className="flex min-h-screen flex-col">
+          <Nav />
+          <div className="px-10 pb-10">
+            <div className="border-[1px] border-borderColor">
+              <main>{children}</main>
+            </div>
+            <p className="mt-8 flex items-center justify-center text-center">
+              &copy; {new Date().getFullYear()} Made by Kyle
+            </p>
+          </div>
+        </div>
       </body>
     </html>
   );

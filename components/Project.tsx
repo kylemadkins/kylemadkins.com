@@ -1,5 +1,3 @@
-import ArrowUpRight from "./icons/ArrowUpRight";
-
 export default function Project({
   imageUrl,
   tags,
