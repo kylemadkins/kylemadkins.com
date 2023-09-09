@@ -52,7 +52,7 @@ export default function BlogDetail() {
         same value for a given input and do not modify state outside of the
         scope of the function. The result is code that is much easier to test
         and fewer side effects that you have to keep track of in your
-        application.<h2>Functors and Lambdas</h2><p>Before getting into the <a href='#'>higher-order functions</a> available in C++, it's important to understand functors and lambdas. Ordinary functions in C++ are not considered <a href='#'>first-class citizens</a>, meaning that they aren't treated like regular variables or objects. We can get around this with function pointers, but a simpler and more flexible approach is to use a functor or lambda expression.</p><p>A functor (or function object) is an instance of a class or struct that can be called like a function. In C++, we can create functors by overloading the <code>console.log(x);</code> operator.</p>
+        application.<h2>Functors and Lambdas</h2><p>Before getting into the <a href='#'>higher-order functions</a> available in C++, it's important to understand functors and lambdas. Ordinary functions in C++ are not considered <a href='#'>first-class citizens</a>, meaning that they aren't treated like regular variables or objects. We can get around this with function pointers, but a simpler and more flexible approach is to use a functor or lambda expression.</p><p>A functor (or function object) is an instance of a class or struct that can be called like a function. In C++, we can create functors by overloading the <code>()</code> operator.</p>
       </p>"
         />
         <Code
@@ -71,6 +71,9 @@ int main() {
 	std::cout << greet("Kyle") << '\\n'; // Hi, Kyle!
 	return 0;
 }`}
+        />
+        <Text
+          content={`<p>Using functors, we can create many variations of the same function, and because they're objects or structs, they can even keep track of their own state, allowing us to perform things like <a href='#'>currying</a> and <a href='#'>partial application.</a></p>`}
         />
       </div>
     </div>

@@ -17,10 +17,10 @@ export default function Partners() {
           <CrystalBridges className="h-14 text-lightGray transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
-          <Apptegy className="h-6 text-lightGray transition-all duration-500 hover:text-white" />
+          <Few className="h-16 text-lightGray transition-all duration-500 hover:text-white" />
         </a>
         <a href="#" target="_blank">
-          <Few className="h-16 text-lightGray transition-all duration-500 hover:text-white" />
+          <Apptegy className="h-6 text-lightGray transition-all duration-500 hover:text-white" />
         </a>
       </div>
     </section>

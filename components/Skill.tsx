@@ -6,7 +6,6 @@ export default function Skill({ icon }: { icon: string }) {
         "hover:text-white",
         "duration-500",
         "transition-all",
-        "text-mediumGray",
       ].join(" ")}
     ></i>
   );

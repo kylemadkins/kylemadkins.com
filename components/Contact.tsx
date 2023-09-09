@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <section className="px-[8rem]">
+    <section id="contact" className="px-[8rem]">
       <div className="grid grid-cols-2 gap-12 border-t-[1px] border-borderColor py-[6rem]">
         <div className="flex flex-col justify-between">
           <div className="flex flex-col gap-8">

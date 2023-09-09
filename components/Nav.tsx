@@ -1,14 +1,14 @@
-"use client";
+import Link from "next/link";
 
 export default function Nav() {
   return (
     <nav className="px-10 py-4">
-      <div className="flex w-full items-center justify-between">
-        <a className="logo icon-img-100" href="#">
-          <h1 className="font-pixel flex items-center gap-2 text-3xl font-bold">
+      <div className="flex w-full items-center justify-between px-[8rem]">
+        <Link href="/" className="logo icon-img-100">
+          <h1 className="flex items-center gap-2 font-pixel text-3xl font-bold">
             Adkins
           </h1>
-        </a>
+        </Link>
         <button
           className="md:hidden"
           type="button"
@@ -26,30 +26,39 @@ export default function Nav() {
           {/*className="collapse navbar-collapse justify-content-center"*/}
           <ul className="flex gap-12 text-xs">
             <li className="uppercase">
-              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
+              <Link
+                href="/about"
+                className="inline-flex py-5 font-sansAlt leading-8"
+              >
                 <span>About</span>
-              </a>
+              </Link>
             </li>
             <li className="uppercase">
-              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
+              <Link
+                href="/projects"
+                className="inline-flex py-5 font-sansAlt leading-8"
+              >
                 <span>Projects</span>
-              </a>
+              </Link>
             </li>
             <li className="uppercase">
-              <a className="font-sansAlt inline-flex py-5 leading-8" href="#">
+              <Link
+                href="/blog"
+                className="inline-flex py-5 font-sansAlt leading-8"
+              >
                 <span>Blog</span>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
         <div className="hidden md:flex">
-          <a
-            className="font-sansAlt hover:border-borderColor inline-flex border-[1px] border-white bg-white px-6 py-3 text-xs text-black transition-all duration-300 hover:bg-transparent hover:text-white"
-            href="#"
+          <Link
+            className="inline-flex border-[1px] border-white bg-white px-6 py-3 font-sansAlt text-xs text-black transition-all duration-300 hover:border-borderColor hover:bg-transparent hover:text-white"
+            href="/#contact"
           >
             <span className="uppercase">Contact</span>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

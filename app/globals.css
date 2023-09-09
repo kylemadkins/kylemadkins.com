@@ -14,12 +14,11 @@
   --primary-green: #bdd448;
   --card-color: #0f182b;
   --border-color: #222f43;
-  --lighter-gray: #a7b8d4;
-  --light-gray: #576680;
-  --medium-gray: #343d4d;
-  --background-color: #070f21;
-  --background-start-color: #090909;
-  --background-end-color: #080d18;
+  --lighter-gray: #99a9c9;
+  --light-gray: #6b7996;
+  --background-color: #06090f;
+  --background-start-color: #06090f;
+  --background-end-color: #080c14;
 }
 
 body {
@@ -31,6 +30,7 @@ body {
     var(--background-end-color) 74%
   );
   font-family: var(--font-sans-primary);
+  scroll-behavior: smooth;
 }
 
 .project .imageContainer {
@@ -128,6 +128,16 @@ body {
 
 .post:hover .preview {
   border-color: var(--primary-green);
+}
+
+.altPost:hover .title {
+  color: var(--primary-green);
+}
+
+.altPost:hover .tag {
+  background-color: var(--primary-green);
+  border-color: var(--primary-green);
+  color: #000;
 }
 
 .prose :where(code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {

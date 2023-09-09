@@ -22,7 +22,6 @@ const config: Config = {
         primaryGreen: "var(--primary-green)",
         cardColor: "var(--card-color)",
         borderColor: "var(--border-color)",
-        mediumGray: "var(--medium-gray)",
         lightGray: "var(--light-gray)",
         lighterGray: "var(--lighter-gray)",
       },

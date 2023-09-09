@@ -1,34 +1,27 @@
-import Post from "./Post";
+import Link from "next/link";
 
-export default function LatestPosts() {
+import Post from "./Post";
+import { Post as IPost } from "@/types/post";
+
+export default function Posts({ posts }: { posts: IPost[] }) {
   return (
     <section className="px-[8rem] pb-[20rem]">
       <h2 className="flex items-center justify-between border-b-[1px] border-borderColor py-5 font-sansAlt text-3xl uppercase">
         Latest Posts
-        <a className="text-xs text-white" href="#">
+        <Link href="/blog" className="text-xs text-white">
           See All
-        </a>
+        </Link>
       </h2>
-      <div className="grid grid-cols-3 gap-12 pt-[5rem]">
-        <Post
-          imageUrl="/images/strings-pixel.png"
-          title="Action Cable Authentication with JSON Web Tokens"
-          publishedAt="12 Aug 2023"
-          tags={["rails", "javascript", "websockets"]}
-        />
-        <Post
-          imageUrl="/images/graffiti-pixel.png"
-          title="Curating an Education"
-          subtitle="How I forged a career without a degree"
-          publishedAt="5 July 2023"
-        />
-        <Post
-          imageUrl="/images/sphere-pixel.png"
-          title="Functional Programming in C++"
-          subtitle="With the Standard Template Library"
-          publishedAt="1 July 2023"
-          tags={["cpp"]}
-        />
+      <div className="grid grid-cols-3 gap-x-12 gap-y-[calc(3rem+13rem)] pt-[5rem]">
+        {posts.map((post) => (
+          <Post
+            imageUrl={post.imageUrl}
+            title={post.title}
+            subtitle={post.subtitle}
+            publishedAt={post.publishedAt}
+            tags={post.tags || []}
+          />
+        ))}
       </div>
     </section>
   );
