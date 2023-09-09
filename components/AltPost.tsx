@@ -23,7 +23,7 @@ export default function Alt({
           {publishedAt}
         </div>
         <div>
-          <h3 className="title text-lg font-medium leading-tight transition-all duration-500">
+          <h3 className="title max-w-[320px] text-xl font-medium leading-snug transition-all duration-500">
             {title}
           </h3>
           {subtitle && subtitle.length ? (
