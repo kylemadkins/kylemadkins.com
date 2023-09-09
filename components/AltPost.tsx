@@ -18,7 +18,7 @@ export default function Alt({
       <div className="image aspect-[3/2] border-[1px] border-transparent p-3 transition-all duration-500">
         <img className="h-full w-full object-cover" src={imageUrl} alt="" />
       </div>
-      <div className="flex flex-col gap-6 p-3 py-10 transition-all duration-500">
+      <div className="flex flex-col gap-6 px-3 py-10 transition-all duration-500">
         <div className="font-sansAlt text-2xs uppercase text-lighterGray">
           {publishedAt}
         </div>
