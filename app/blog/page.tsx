@@ -34,6 +34,13 @@ export default function Blog() {
               publishedAt: "1 July 2023",
               tags: ["cpp"],
             },
+            {
+              imageUrl: "/images/sphere-pixel.png",
+              title: "Functional Programming in C++",
+              subtitle: "With the Standard Template Library",
+              publishedAt: "1 July 2023",
+              tags: ["cpp"],
+            },
           ]}
         />
       </section>
