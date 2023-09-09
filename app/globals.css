@@ -130,6 +130,10 @@ body {
   border-color: var(--primary-green);
 }
 
+.altPost:hover .image {
+  border-color: var(--primary-green);
+}
+
 .altPost:hover .title {
   color: var(--primary-green);
 }

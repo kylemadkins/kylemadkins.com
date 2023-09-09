@@ -14,14 +14,11 @@ export default function Alt({
   tags?: string[];
 }) {
   return (
-    <Link
-      href="#"
-      className="altPost mb-16 block break-inside-avoid border-[1px] border-borderColor transition-all duration-500 hover:border-primaryGreen"
-    >
-      <div className="aspect-[3/2]">
+    <Link href="#" className="altPost">
+      <div className="image aspect-[3/2] border-[1px] border-transparent p-3 transition-all duration-500">
         <img className="h-full w-full object-cover" src={imageUrl} alt="" />
       </div>
-      <div className="flex flex-col gap-6 px-10 py-12 transition-all duration-500">
+      <div className="flex flex-col gap-6 p-3 py-10 transition-all duration-500">
         <div className="font-sansAlt text-2xs uppercase text-lighterGray">
           {publishedAt}
         </div>

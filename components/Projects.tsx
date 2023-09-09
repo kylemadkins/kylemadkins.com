@@ -9,7 +9,7 @@ export default function Projects() {
           See All
         </a>
       </h2>
-      <div className="grid grid-cols-2 gap-12 pt-[4rem]">
+      <div className="mx-[-0.75rem] grid grid-cols-2 gap-12 pt-[4rem]">
         <Project
           imageUrl="/images/crystal.jpeg"
           tags={["javascript", "nextjs", "nodejs"]}
