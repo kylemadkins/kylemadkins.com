@@ -3,7 +3,7 @@ import Project from "./Project";
 export default function Projects() {
   return (
     <section className="px-[8rem] pb-[8rem]">
-      <h2 className="flex items-center justify-between border-b-[1px] border-borderColor py-5 font-sansAlt text-3xl uppercase">
+      <h2 className="flex items-center justify-between border-b-[1px] border-borderColor pb-5 font-sansAlt text-3xl uppercase">
         Projects
         <a className="text-xs text-white" href="#">
           See All

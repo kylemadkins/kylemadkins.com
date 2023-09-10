@@ -4,13 +4,9 @@ import Project from "@/components/Project";
 export default function Projects() {
   return (
     <>
-      <PageHero
-        title="Projects"
-        content="Welcome to my little corner of the Internet. Kick your feet up, grab a
-        drink, and enjoy your stay."
-      />
+      <PageHero title="Projects" content="See what I've been building lately" />
       <section className="px-[8rem] pb-[8rem]">
-        <div className="mx-[-0.75rem] grid grid-cols-2 gap-8">
+        <div className="mx-[-0.75rem] grid grid-cols-2 gap-12">
           <Project
             imageUrl="/images/crystal.jpeg"
             tags={["javascript", "nextjs", "nodejs"]}

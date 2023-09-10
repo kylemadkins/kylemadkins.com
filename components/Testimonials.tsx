@@ -4,7 +4,7 @@ import Partners from "./Partners";
 export default function Testimonials() {
   return (
     <section className="px-[8rem] pb-[8rem]">
-      <h2 className="border-b-[1px] border-borderColor py-5 font-sansAlt text-3xl uppercase">
+      <h2 className="border-b-[1px] border-borderColor pb-5 font-sansAlt text-3xl uppercase">
         Testimonials
       </h2>
       <div className="grid grid-cols-2 gap-12 pt-[4rem]">

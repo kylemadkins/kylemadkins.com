@@ -15,7 +15,7 @@ export default function Project({
     <Link className="project" href="#">
       <div
         className={`imageContainer ${
-          small ? "aspect-[3/2]" : "aspect-video"
+          small ? "aspect-[3/2]" : "aspect-[5/3]"
         } p-3 transition-all duration-500`}
       >
         <img className="h-full w-full object-cover" src={imageUrl} alt="" />
