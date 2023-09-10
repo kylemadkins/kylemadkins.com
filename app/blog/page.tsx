@@ -1,10 +1,14 @@
-import BlogHero from "@/components/BlogHero";
+import PageHero from "@/components/PageHero";
 import Posts from "@/components/Posts";
 
 export default function Blog() {
   return (
     <>
-      <BlogHero />
+      <PageHero
+        title="Blog"
+        content="Welcome to my little corner of the Internet. Kick your feet up, grab a
+        drink, and enjoy your stay."
+      />
       <section className="px-[8rem] pb-[8rem]">
         <Posts
           posts={[
