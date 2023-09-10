@@ -1,4 +1,4 @@
-export default function Link({ className }: { className?: string }) {
+export default function ArrowUpRight({ className }: { className?: string }) {
   return (
     <svg
       className={className}

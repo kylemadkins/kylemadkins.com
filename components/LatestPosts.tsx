@@ -3,7 +3,7 @@ import Link from "next/link";
 import Post from "./Post";
 import { Post as IPost } from "@/types/post";
 
-export default function Posts({ posts }: { posts: IPost[] }) {
+export default function LatestPosts({ posts }: { posts: IPost[] }) {
   return (
     <section className="px-[8rem] pb-[20rem]">
       <h2 className="flex items-center justify-between border-b-[1px] border-borderColor py-5 font-sansAlt text-3xl uppercase">

@@ -8,7 +8,7 @@ export default function TypingText({ text }: { text: string }) {
 
   useEffect(() => {
     const typed = new Typed(typedEl.current, {
-      strings: ["Kyle Adkins"],
+      strings: [text],
       typeSpeed: 50,
     });
 

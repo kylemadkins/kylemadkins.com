@@ -1,7 +1,7 @@
 import PageHero from "@/components/PageHero";
 import Project from "@/components/Project";
 
-export default function Blog() {
+export default function Projects() {
   return (
     <>
       <PageHero

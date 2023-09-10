@@ -1,8 +1,6 @@
-import Link from "next/link";
-
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-import Latest from "@/components/LatestPosts";
+import LatestPosts from "@/components/LatestPosts";
 import Contact from "@/components/Contact";
 import Testimonials from "@/components/Testimonials";
 
@@ -12,7 +10,7 @@ export default function Home() {
       <Hero />
       <Projects />
       <Testimonials />
-      <Latest
+      <LatestPosts
         posts={[
           {
             imageUrl: "/images/strings-pixel.png",

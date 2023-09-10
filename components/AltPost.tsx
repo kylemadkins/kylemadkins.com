@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Alt({
+export default function AltPost({
   imageUrl,
   title,
   subtitle,
